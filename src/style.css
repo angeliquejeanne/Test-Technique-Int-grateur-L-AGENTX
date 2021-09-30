@@ -35,7 +35,7 @@ header div img {
     margin: auto;
 }
 header div p {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     color: #F8485E;
     padding: 20px 20px 0;
@@ -76,10 +76,22 @@ main section p {
 /* Querie pour le passage au Desktop 768px */
 
 @media (min-width: 768px) {
+    header {
+        height: 100%;
+    }
+    header div {
+        transform: translate(0%, 100%);
+        top: 0;
+        left: 0;
+        position: relative;
+    }
     header div img {
         width: 148px;
         height: 169px;
         margin: auto;
+    }
+    header div p {
+        font-size: 24px;
     }
     main {
         margin: 90px 115px;
