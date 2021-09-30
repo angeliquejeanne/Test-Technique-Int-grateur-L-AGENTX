@@ -1,0 +1,104 @@
+/* Import de la Font Poppins via google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset + body */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #262A45;
+}
+
+/* Réalisation en first mobile */
+/* Partie header */
+header {
+    background: #FFEAD9;
+    height: 300px;
+    width: 100%;
+    padding: 50px 0;
+}
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+header div img {
+    width: 115px;
+    height: 131px;
+    margin: auto;
+}
+header div p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F8485E;
+    padding: 20px 20px 0;
+}
+/* Partie main */
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+main section {
+    margin: 55px auto;
+}
+main section .content-title{
+    display: flex;
+    flex-direction: row;
+}
+main section img {
+    width: 58px;
+    height: 52.82px;
+    margin: 0 20px 0 0;
+}
+main section h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+main section .border {
+    background-color: #262A45;
+    width: 56px;
+    height: 3px;
+    margin: 5px 75px;
+}
+main section p {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+/* Querie pour le passage au Desktop 768px */
+
+@media (min-width: 768px) {
+    header div img {
+        width: 148px;
+        height: 169px;
+        margin: auto;
+    }
+    main {
+        margin: 90px 115px;
+    }
+    main .container {
+        display: flex;
+    }
+    main section {
+        width: 520px;
+    }
+    main section:nth-child(1) {
+        margin-right: 45px;
+    }
+    main section h2 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+    main section p {
+        letter-spacing: 0.5px;
+        font-size: 24px;
+    }
+}
