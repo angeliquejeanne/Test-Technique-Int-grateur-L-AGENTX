@@ -76,15 +76,15 @@ main section p {
 /* Querie pour le passage au Desktop 768px */
 
 @media (min-width: 768px) {
-    header {
+    /* header {
         height: 100%;
-    }
-    header div {
+    } */
+    /* header div {
         transform: translate(0%, 100%);
         top: 0;
         left: 0;
         position: relative;
-    }
+    } */
     header div img {
         width: 148px;
         height: 169px;
@@ -107,10 +107,10 @@ main section p {
     }
     main section h2 {
         font-size: 28px;
-        font-weight: 500;
+        font-weight: 600;
     }
     main section p {
         letter-spacing: 0.5px;
-        font-size: 24px;
+        font-size: 15px;
     }
 }
