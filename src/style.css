@@ -76,15 +76,6 @@ main section p {
 /* Querie pour le passage au Desktop 768px */
 
 @media (min-width: 768px) {
-    /* header {
-        height: 100%;
-    } */
-    /* header div {
-        transform: translate(0%, 100%);
-        top: 0;
-        left: 0;
-        position: relative;
-    } */
     header div img {
         width: 148px;
         height: 169px;
